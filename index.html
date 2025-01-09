@@ -26,6 +26,7 @@
         margin: 0;
         padding: 0;
         box-sizing: border-box;
+        font-family: var(--font-family);
       }
       :root {
         --primary-color: hsl(218, 44%, 22%);
@@ -40,7 +41,6 @@
       .wrapper {
         display: flex;
         flex-flow: column;
-
         min-height: 100vh;
         background-color: var(--background-color);
        
@@ -59,8 +59,6 @@
         text-align: center;
         margin:auto;
      
-
-        font-family: var(--font-family);
         font-size: var(--base-font-size);
         border-radius: 15px;
       }
@@ -92,7 +90,8 @@
         text-align: center;
       }
       .attribution a {
-        color: hsl(228, 45%, 44%);
+        color: var(--primary-color);
+        text-decoration: none;
       }
     </style>
   </head>
