@@ -38,18 +38,15 @@
         --font-normal: 400;
         --base-font-size: 15px;
       }
-      .wrapper {
+      body {
         display: flex;
         flex-flow: column;
         min-height: 100vh;
         background-color: var(--background-color);
       }
 
-      .content {
+      main {
         background-color: var(--secondary-color);
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
         width: 90%;
         max-width: 220px;
 
@@ -61,13 +58,13 @@
         border-radius: 15px;
       }
 
-      .content h1 {
+      main h1 {
         font-weight: var(--font-bold);
         font-size: var(--base-font-size);
         margin-bottom: 15px;
       }
 
-      .content p {
+      main p {
         font-weight: var(--font-normal);
         font-size: var(--base-font-size);
         color: var(--background-color);
@@ -94,24 +91,22 @@
     </style>
   </head>
   <body>
-    <div class="wrapper">
-      <main class="content">
-        <img src="./images/image-qr-code.png" alt="qr code" class="qr" />
+    <main>
+      <img src="./images/image-qr-code.png" alt="qr code" class="qr" width="100%"/>
 
-        <div class="text">
-          <h1>Improve your front-end skills by building projects</h1>
-          <p>
-            Scan the QR code to visit Frontend Mentor and take your coding
-            skills to the next level
-          </p>
-        </div>
-      </main>
-      <footer class="attribution">
-        Challenge by
-        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-          >Frontend Mentor</a
-        >. Coded by <a href="#">Simon Chukwuebuka</a>.
-      </footer>
-    </div>
+      <div class="text">
+        <h1>Improve your front-end skills by building projects</h1>
+        <p>
+          Scan the QR code to visit Frontend Mentor and take your coding skills
+          to the next level
+        </p>
+      </div>
+    </main>
+    <footer class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Simon Chukwuebuka</a>.
+    </footer>
   </body>
 </html>
